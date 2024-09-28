@@ -3,11 +3,11 @@ This service provides an endpoint that returns a subset of a User's GitHub data.
 
 ## Installation
 * Make sure you have JDK21 and Maven 3.x
-* Clone the repo
+* Clone the repo:
    ```sh
    git clone https://github.com/treichk/BranchDemo.git
    ```
-* Run the service
+* Run the service:
    ```sh
     cd BranchDemo
     mvnw spring-boot:run
