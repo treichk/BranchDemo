@@ -25,7 +25,7 @@ class GetGitHubUserReposTest {
 	private MockRestServiceServer mockRestServiceServer;
 
 	@Test
-	void userClientSuccessfullyReturnsUser() {
+	void serviceSuccessfullyReturnsRepos() {
 
 		String json = """
 			[
@@ -51,7 +51,7 @@ class GetGitHubUserReposTest {
 
 
 	@Test
-	void userClientThrowsExceptionWhenNoUserIsFound() {
+	void serviceThrowsExceptionWhenNoReposAreFound() {
 		this.mockRestServiceServer.expect(requestTo("https://api.github.com/users/dontexist/repos"))
 		.andRespond(MockRestResponseCreators.withStatus(HttpStatus.NOT_FOUND));
 

@@ -21,7 +21,7 @@ public class MainApplication {
 	}
 	
 	@CacheEvict(value = "users", allEntries = true)
-	@Scheduled(fixedRate = 43200000)
+	@Scheduled(fixedRate = 43200000) //empty the cache every 12 hours
 	public void emptyUsersCache() {
 	    logger.info("emptying Users cache");
 	}

@@ -30,7 +30,7 @@ class UserDataServiceImplTest {
 	UserDataServiceImpl userDataService;
 
 	@Test
-	void test() {
+	void testUserDataService() {
 		Mockito.when(githubService.getGitHubUserData("octocat")).thenReturn(createTestGitHubUser());
 		Mockito.when(githubService.getGitHubUserRepos("octocat")).thenReturn(createTestRepos());
 
